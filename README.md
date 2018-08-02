@@ -9,6 +9,10 @@ Sequelize being used for Postgres ORM. Users stored in this db to get around wor
 - [ ] need append tx in `python/automated_sensehat_upload`
 - [x] change connection in `python/automated_sensehat_upload` to tesnet
 - [x] consolidate `prep_code/javascript_prep` into just connection + functions
+- [x] db setup for standard users
+	+ [x] routes
+	+ [x] db models
+	+ [x] config
 - [ ] create web interface (hosted via GitHub Pages or Netlify):
 	+ [x] html skeleton
 	+ [ ] uPort login
