@@ -20,10 +20,8 @@ db.sequelize = sequelize;
 //Models/tables
 debugger
 db.users = require('../models/users.js')(sequelize, Sequelize)
-db.clothes = require('../models/clothes.js')(sequelize, Sequelize)
 
 //Relations
-db.clothes.belongsTo(db.users)
 db.users.hasMany(db.clothes)
 
 module.exports = db
