@@ -1,0 +1,16 @@
+DEVICES
+- Devices are currently being kept anonymous re: names but are including geolocation data
+(need to check re: GDPR compliance etc) This could be updated easily in the future to include
+names / more if needed.
+- Geolocation data verification will be included at a later date via integrating something like FOAM's tech
+( see https://f-o-a-m.github.io/foam.developer/ for more ).
+- The python & javascript packages will be available as drivers to download onto your IoT
+device of choice to start piping data to our BDB node.
+
+WEB INTERFACE
+- Including registration and login system for data use / parsing (will be useful for
+later building of applications)
+	+ add ability to register your device (need to work out proper way of doing this securely...publicKey?)
+- show 'generic' infographic on front page of interface
+- opportunity to parse data without logging in?
+- use netlify to host instead of GitHub pages  

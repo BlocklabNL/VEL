@@ -1,0 +1,21 @@
+{
+  "name": "iot_info_layer",
+  "version": "0.0.1",
+  "description": "iot registry as first part of info layer for VEL stack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "max hampshire",
+  "license": "ISC",
+  "dependencies": {
+    "bigchaindb-driver": "^4.0.1",
+    "bigchaindb-orm": "^2.0.0",
+    "bip39": "^2.5.0",
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3",
+    "lite-server": "^2.3.0",
+    "nodemon": "^1.18.3",
+    "npm": "^6.1.0"
+  }
+}

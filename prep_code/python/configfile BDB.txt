@@ -1,0 +1,31 @@
+docker run --interactive --rm --tty --volume $HOME/bigchaindb_docker:/data --env BIGCHAINDB_DATABASE_HOST=172.17.0.1 bigchaindb/bigchaindb -y configure mongodb
+
+docker run --interactive --rm --tty --volume $HOME/bigchaindb_docker:/data --env BIGCHAINDB_DATABASE_HOST=172.17.0.1 bigchaindb/bigchaindb -y configure mongodb
+
+C:\Users\Gnossienli\bigchaindb_docker
+
+\\Set MongoDB as database:
+docker run --detach --name=mongodb --publish=27017:27017 --restart=always --volume=$HOME/mongodb_docker/db:/data/db --volume=$HOME/mongodb_docker/configdb:/data/configdb mongo:3.4.9 --replSet=bigchain-rs stop
+
+\\Start BDB:
+docker run --detach --name=bigchaindb --publish=59984:9984 --restart=always --volume=$HOME/bigchaindb_docker:/data bigchaindb/bigchaindb start
+docker run --detach --name=bigchaindb --publish=59984:9984 --restart=always --volume=$HOME/bigchaindb_docker:/data bigchaindb/bigchaindb stop
+
+
+//List all containers (only IDs)
+docker ps -aq
+//Stop all running containers
+docker stop $(docker ps -aq)
+//Remove all containers
+docker rm $(docker ps -aq)
+//Remove all images
+docker rmi $(docker images -q)
+
+
+Droplet:
+//start MongoDB
+sudo mongod --replSet=bigchain-rs
+//start BDB
+bigchaindb start
+
+http://188.166.104.12:9984/
