@@ -2,6 +2,8 @@ Connection &amp; functions for connection between IoT device and BDB testnet.
 Examples and functions for connection, registration, and updating of IoT device info & readouts with BDB.
 Web interface coming soon. Bash script for uploading and hosting via GitHub Pages.
 
+Sequelize being used for Postgres ORM. Users stored in this db.
+
 *see* `./details.txt` *for further info*
 
 - [ ] need append tx in `python/automated_sensehat_upload`

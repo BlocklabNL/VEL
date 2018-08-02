@@ -1,18 +1,20 @@
-const dotenv = require('dotenv')
-require('dotenv').config()
+const dotenv = require('dotenv');
 const express = require('express');
 const app = express();
-const HTTP_WEBPORT = process.env.HTTP_WEBPORT;
 const bodyParser = require("body-parser");
+const bcrypt = require("bcrypt");
+const path = require("path");
+const BigchainDB = require('bigchaindb-driver');
+const bip39 = require('bip39');
+const Orm = require('bigchaindb-orm').default; //for some reason the Orm needs '.default'... cf. https://github.com/bigchaindb/js-driver-orm/issues/43
+const db = require(path.resolve( __dirname, "../config/db.js" ));
 
-app.use(bodyParser.urlencoded({extended:true}))
+require('dotenv').config();
+const HTTP_WEBPORT = process.env.HTTP_WEBPORT;
+const HTTPS_WEBPORT = process.env.HTTPS_WEBPORT;
+app.use(bodyParser.urlencoded({extended:true}));
 
 /* LINK TO NODE - currently testnet */
-const BigchainDB = require('bigchaindb-driver')
-const bip39 = require('bip39')
-//for some reason the Orm needs '.default'... cf. https://github.com/bigchaindb/js-driver-orm/issues/43
-const Orm = require('bigchaindb-orm').default
-
 const bdbOrm = new Orm(
     "https://test.bigchaindb.com/api/v1/",
     {
@@ -29,6 +31,12 @@ require("../routes/device_info.js")(app, bdbOrm)
 require("../routes/update.js")(app, bdbOrm)
 require("../routes/burn.js")(app, bdbOrm)
 
-app.listen(HTTP_WEBPORT, () => console.log(`app listening on port ${HTTP_WEBPORT}`))
-console.log("BigchainDB connection details:")
-console.log(bdbOrm.connection)
+db.sequelize.sync({
+    force: false, // 'true' drops all tables on app restart for development. 'false' for production!
+    logging: console.log
+}).then(()=> {
+  app.listen(HTTP_WEBPORT, () => console.log(`app listening on port ${HTTP_WEBPORT} \nTHIS IS AN INSECURE HTTP CONNECTION \nUSE HTTPS CONNECTION IN PRODUCTION`))
+  //app.listen(HTTPS_WEBPORT, () => console.log(`app listening on port ${HTTPS_WEBPORT}`))
+  console.log("BIGCHAINDB CONNECTION DETAILS:")
+  console.log(bdbOrm.connection)
+})
