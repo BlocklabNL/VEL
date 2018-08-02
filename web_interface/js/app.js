@@ -24,7 +24,7 @@ const bdbOrm = new Orm(
 )
 
 // bigchaindb routes - one per function
-require("../routes/standard_login.js")(app, bdbOrm, bcrypt) // standard express server management of users
+require("../routes/standard_login.js")(app, bdbOrm, bcrypt) // standard express server management of users via SQL db. 
 require("../routes/uport_login.js")(app, bdbOrm) // add uport object when option is added
 require("../routes/register_device.js")(app, bdbOrm)
 require("../routes/device_info.js")(app, bdbOrm)
