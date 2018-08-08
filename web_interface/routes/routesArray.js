@@ -1,9 +1,5 @@
 var routes = [
-  require('/burn'),
-  require('/device_info'),
-  require('/register_device'),
-  require('/standard_login')
-  require('/update')
+  require('/standard_login'),
   require('/uport_login')
 ]
 

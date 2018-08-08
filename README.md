@@ -1,8 +1,9 @@
 Connection &amp; functions for connection between IoT device and BDB testnet.
 Examples and functions for connection, registration, and updating of IoT device info & readouts with BDB.
-Web interface coming soon. Bash script for uploading and hosting via GitHub Pages.
 
-Sequelize being used for Postgres ORM. Users stored in this db to get around worries re: setting up our own blockchain-based ID system + GDPR compliance..
+Web interface coming soon. Bash script for uploading and hosting via GitHub Pages included if that's the way we go.
+
+Sequelize being used for Postgres ORM. Users stored in this db to get around worries re: setting up our own blockchain-based ID system + GDPR compliance.
 
 *see* `./details.txt` *for further info*
 
@@ -20,11 +21,11 @@ Sequelize being used for Postgres ORM. Users stored in this db to get around wor
 		- [ ] db orm interfacing
 		- [ ] cookie + secret
 		- [ ] secure signup (bcrypt)
-	+ [ ] http(/s) for all functions in drivers:
-		- [ ] registerDevice()
-		- [ ] deviceInfo()
-		- [ ] update()
-		- [ ] burn()
+	+ ~~[ ] routes for all functions in drivers:~~
+		- ~~[ ] registerDevice()~~
+		- ~~[ ] deviceInfo()~~
+		- ~~[ ] update()~~
+		- ~~[ ] burn()~~
 	+ [ ] infographics (scrape BDB)
 	+ [x] .sh for upload & hosting
 
