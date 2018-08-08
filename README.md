@@ -15,19 +15,18 @@ Sequelize being used for Postgres ORM. Users stored in this db to get around wor
 	+ [x] config
 - [ ] create web interface (hosted via GitHub Pages or Netlify):
 	+ [x] html skeleton
-	+ [ ] uPort login
+	+ [ ] uPort login / integration
 	+ [ ] 'standard' login
-	+ [ ] routes for all functions in drivers:
+		- [ ] db orm interfacing
+		- [ ] cookie + secret
+		- [ ] secure signup (bcrypt)
+	+ [ ] http(/s) for all functions in drivers:
 		- [ ] registerDevice()
 		- [ ] deviceInfo()
 		- [ ] update()
 		- [ ] burn()
 	+ [ ] infographics (scrape BDB)
 	+ [x] .sh for upload & hosting
-- [ ] testing^testing
-	+ [ ] check current python code works with V2 txs
-	+ [ ] find js-capable device
-	+ [ ] js interface for device
 
 Further *potential* development paths
 - [ ] integrate FOAM for geo-spatial data verification ( cf. https://f-o-a-m.github.io/foam.developer/ for tools)
