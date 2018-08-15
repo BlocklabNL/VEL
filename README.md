@@ -14,22 +14,26 @@ Sequelize being used for Postgres ORM. Users stored in this db to get around wor
 	+ [x] routes
 	+ [x] db models
 	+ [x] config
-- [ ] create web interface (hosted via GitHub Pages or Netlify):
+- [ ] create web interface:
 	+ [x] html skeleton
-	+ [ ] uPort login / integration
+	+ [ ] proper code for site
+	+ [ ] generic infographics ( scrape BDB )
+	+ [ ] personal dashboard ( scrape BDB )
+	+ ~~[ ] uPort login / integration~~
 	+ [ ] 'standard' login
 		- [ ] db orm interfacing
 		- [ ] cookie + secret
-		- [ ] secure signup (bcrypt)
+		- [ ] secure signup ( bcrypt )
 	+ ~~[ ] routes for all functions in drivers:~~
 		- ~~[ ] registerDevice()~~
 		- ~~[ ] deviceInfo()~~
 		- ~~[ ] update()~~
 		- ~~[ ] burn()~~
-	+ [ ] infographics (scrape BDB)
-	+ [x] .sh for upload & hosting
+	+ [x] .sh for upload & hosting if done via GitHub Pages
 
 Further *potential* development paths
-- [ ] integrate FOAM for geo-spatial data verification ( cf. https://f-o-a-m.github.io/foam.developer/ for tools)
+- [ ] integrate FOAM for geo-spatial data verification ( cf. https://f-o-a-m.github.io/foam.developer/ for tools )
 - [ ] look into classification of 'data trustworthy-ness' re: method of data input
-	+ [ ] look into potential to build atop this re: levels of trusted data (e.g. TCR)
+	+ [ ] look into hardware integration & distribution for this ( cf. Zymbit )
+	+ [ ] look into potential to build atop this re: levels of trusted data ( e.g. TCR )
+- [ ] integrate on-chain ID management ( e.g. uPort )

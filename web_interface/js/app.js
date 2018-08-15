@@ -24,7 +24,7 @@ const bdbOrm = new Orm(
 )
 
 ///  @dev removed the possibility for pushing via POST request
-/// routes now only for user info management 
+/// routes now only for user info management
 require("../routes/standard_login.js")(app, bdbOrm, bcrypt) // standard express server management of users via SQL db.
 require("../routes/uport_login.js")(app, bdbOrm) // add uport object when option is added if necessary
 
