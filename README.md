@@ -2,11 +2,7 @@
 
 This is a project that is related to energy data and decentralized ledger technology.
 
-[![VEH Intro video](https://img.youtube.com/vi/jOXnr2jcwck/1.jpg)](https://www.youtube.com/watch?v=jOXnr2jcwck) 
-
 We will create documentation and software that makes it easy to upload smart meter data to a decentralized database (bigchaindb). Next to that we offer a dashboard that gives users insights in their own data as well as the (anonymized) data of others.
-
-[![VEH Concept video](https://img.youtube.com/vi/OkTXPwqOrpo/0.jpg)](https://www.youtube.com/watch?v=OkTXPwqOrpo) 
 
 By creating this project we:
 
@@ -20,8 +16,17 @@ This project scope doesn’t implement the following functionality, though these
 - Integrations with other data platforms like Ocean, IOTA Marketplace & Streamr.
 - Monetization of data.
 
+***Introduction video***
 
-The project started on September 5th. Do you want to cowork on this project? Cool! There are some bounties available:
+[![VEH Intro video](https://img.youtube.com/vi/jOXnr2jcwck/0.jpg)](https://www.youtube.com/watch?v=jOXnr2jcwck) 
+
+***Video on the project concept***
+
+[![VEH Concept video](https://img.youtube.com/vi/OkTXPwqOrpo/0.jpg)](https://www.youtube.com/watch?v=OkTXPwqOrpo) 
+
+***Video on how to pick up bounties***
+
+Do you want to cowork on this project? Cool! There are some bounties available:
 
 [![VEH Issue bounties explanation](https://img.youtube.com/vi/lIgz_kYujk0/0.jpg)](https://www.youtube.com/watch?v=lIgz_kYujk0) 
 
