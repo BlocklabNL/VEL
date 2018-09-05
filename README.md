@@ -24,12 +24,6 @@ This project scope doesn’t implement the following functionality, though these
 
 [![VEH Concept video](https://img.youtube.com/vi/OkTXPwqOrpo/0.jpg)](https://www.youtube.com/watch?v=OkTXPwqOrpo) 
 
-***Video on how to pick up bounties***
-
-Do you want to cowork on this project? Cool! There are some bounties available:
-
-[![VEH Issue bounties explanation](https://img.youtube.com/vi/lIgz_kYujk0/0.jpg)](https://www.youtube.com/watch?v=lIgz_kYujk0) 
-
 See https://slides.com/bartwr/rotterdam-the-hague-virtual-energy-hub for the slides from the video above.
 
 ## About
@@ -45,6 +39,14 @@ The VEL/H is currently in the initial stages of development, We are focussing ou
 Obviously we have plans beyond the next few months - you can see our roadmap below for a more detailed overview of our long term goals! [to be created]
 
 ## How to contribute?
+
+***Video on how to pick up bounties***
+
+Do you want to cowork on this project? Cool! There are some bounties available:
+
+[![VEH Issue bounties explanation](https://img.youtube.com/vi/lIgz_kYujk0/0.jpg)](https://www.youtube.com/watch?v=lIgz_kYujk0) 
+
+This is how you can contrubute:
 
 - See if you want to contribute to one of the [tasks](https://github.com/BlocklabNL/VEL/issues) defined
 - Let people know this project exists (i.e. by following [@openenergyhub](https://twitter.com/openenergyhub) on Twitter)
