@@ -1,17 +1,17 @@
-#Notes, links to other projects, random thoughts and so on
+# Notes, links to other projects, random thoughts and so on
 
 
-##Domotics projects
+## Domotics projects
 
 To gather as much data as possible and make onboarding easy and fun we should integrate with domotics projects.
 
 - [Domoticz](http://www.domoticz.com/)
 
 
-##Random thoughts
+## Random thoughts
 
 
-###Costs
+### Costs
 
 We should try to keep the costs of onboarding down and keep it as simple as possible.
 
