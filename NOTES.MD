@@ -73,7 +73,8 @@ https://www.raspberrypi.org/documentation/configuration/wireless/access-point.md
 
 ### Software needed for data uploading
 
-Node 10.10 is tested and working steadily
+Node 10.10 is tested and working steadily instructions on doing this can be found here:
+https://thisdavej.com/beginners-guide-to-installing-node-js-on-a-raspberry-pi/
 
 ```
 git clone https://github.com/MickdeGraaf/oehu-setup-api
